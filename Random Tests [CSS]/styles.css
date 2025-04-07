@@ -1,0 +1,14 @@
+body{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(53,121,9,1) 0%, rgba(136,8,8,1) 100%);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+section p:nth-child(odd){
+    color: aqua;
+}
+
+li{
+    color: aqua;
+}
+
