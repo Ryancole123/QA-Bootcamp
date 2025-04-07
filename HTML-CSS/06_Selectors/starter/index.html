@@ -39,7 +39,7 @@
         li:nth-child(3){ background-color: #0094ff; }        /** Third-child list items **/
         li:nth-child(odd){ background-color: #b6ff00; }        /** Odd-children list items **/
         li:nth-child(even){ background-color: #1d1bc6; }        /** Even-children list items **/
-        { background-color: #ff0000; }        /** Everything but the first-child list item **/
+        li:not(:first-child){ background-color: #ff0000; }        /** Everything but the first-child list item **/
         p:first-of-type{ background-color: #00ff00; }        /** The first paragraph **/
         p:last-of-type{ background-color: #0000ff; }        /** The last paragraph **/
         label[for="name"]{ background-color: aquamarine; }     /** A label with a for attribute of name **/
