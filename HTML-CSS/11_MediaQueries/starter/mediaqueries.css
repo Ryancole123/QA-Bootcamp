@@ -30,3 +30,25 @@ figure {
 figcaption {
     font-size: 0.8em;
 }
+
+@media (min-width: 794px){
+    body{
+        background-color: hsla(240,100%,50%,0.2);
+    }
+    figure{
+        float: left;
+        width: 40%;
+        margin-right: 4.5%;
+    }
+}
+
+@media (min-width: 1130px){
+    body{
+        background-color: hsla(120,100,50,0.2);
+        margin: 25px 10%;
+    }
+    figure{
+        width: 28%;
+        margin-right: 2.5%;
+    }
+}
