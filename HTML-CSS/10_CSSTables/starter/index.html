@@ -7,7 +7,30 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>QuickLab 10 - Tables and CSS</title>
     <style>
-        
+        table{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, tr{
+            border: 1px solid hsla(0, 0%, 17%, 1);
+            text-align: left;
+        }
+
+        th{
+            padding: 15px 10px;
+            background-color: hsla(330, 100%, 71%, 1);
+            color: hsla(0, 0%, 17%, 1);
+        }
+
+        tr:nth-child(even){
+            background-color: hsla(0, 0%, 74%, 0.2);
+        }
+
+        tr:hover{
+            background-color: hsla(330, 100%, 71%, 0.5);
+        }
     </style>
 </head>
 
