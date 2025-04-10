@@ -9,4 +9,7 @@ while(x < 10000){
     console.log(x);
     loopCounter++;
     
+    
+    
 }
+console.log(`It took ${loopCounter} iterations to reach 10000`);
