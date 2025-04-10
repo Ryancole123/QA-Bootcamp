@@ -11,6 +11,10 @@ try{
         throw e;
     }else{
         document.write(`<p> Your number was ${x}</p>`)
+        if(1 <= x <= 10){
+            console.log("Test passed");
+            
+        }
         break;
     }
 }catch (e){
@@ -19,3 +23,4 @@ try{
     console.log("finally block");    
 }
 }while(true)
+
