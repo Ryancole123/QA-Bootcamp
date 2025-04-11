@@ -40,3 +40,19 @@ for(let i = 0, j = quote.length; i < j; i++){
 }
 
 console.log(output);
+
+
+const x = ["a", "b", "c", "d"];
+
+for (const element of x) {
+    console.log(element);
+    
+}
+
+for (const key in x) {
+    
+        
+        console.log(key);
+        
+    
+}
