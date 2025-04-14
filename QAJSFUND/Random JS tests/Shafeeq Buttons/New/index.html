@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function increment(){
+            txt1.value = parseInt(txt1.value) + 1
+        }
+        function decrement(){
+            txt1.value = parseInt(txt1.value) - 1
+        }
+        function leaving1(){
+            txt1.value = 1
+        }
+        function entering1(){
+            txt1.value = 200
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="txt1" value="0">
+    <br>
+    <input type="button" id="btn1" onmousemove="increment()" 
+    onmouseleave="leaving1()" 
+    onmouseenter="entering1()"
+    value="++ Increment">
+    <br>
+    <br>
+    <input type="button" id="btn2" onmousemove="decrement()" value="-- Decrement">
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calc</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        let operator;
+        let num1 = 0;
+        function numberToText(a){
+            if(a == 0 && scrn.value != ""){
+                scrn.value += a
+                
+            }else if (a != 0){scrn.value += a}
+
+        }
+
+        function clearCalc(){
+            scrn.value = "";
+            operator = "";
+            num1 = 0;
+        }
+
+        function operationSelection(userOperator){
+            operator = userOperator;
+            num1 = scrn.value;
+            scrn.value = "";
+
+
+        }
+
+        function result(){
+            if(operator == '+'){
+                scrn.value = parseInt(num1) + parseInt(scrn.value);
+            }else if(operator == "-"){
+                scrn.value = parseInt(num1) - parseInt(scrn.value);
+            }else if(operator == "*"){
+                scrn.value = parseInt(num1) * parseInt(scrn.value);
+            }else if(operator == "/"){
+                scrn.value = parseFloat(num1) / parseFloat(scrn.value);
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <input id="scrn"    type="text"/>
+    <br>
+    <input id="btn0" type="button" value="0" class="standardButton"  onclick="numberToText(btn0.value)"/>
+    <input id="btn1" type="button" value="1" class="standardButton" onclick="numberToText(btn1.value)"/>
+    <input id="btn2" type="button" value="2" class="standardButton" onclick="numberToText(btn2.value)"/>
+    <input id="btn_plus" type="button" value="+" class="standardButton" onclick="operationSelection('+')"/>
+    <br>
+    <input id="btn3" type="button" value="3" class="standardButton" onclick="numberToText(btn3.value)"/>
+    <input id="btn4" type="button" value="4" class="standardButton" onclick="numberToText(btn4.value)"/>
+    <input id="btn5" type="button" value="5" class="standardButton" onclick="numberToText(btn5.value)"/>
+    <input id="btn_Mult" type="button" value="x" class="standardButton" onclick="operationSelection('*')"/>
+    <br>
+    <input id="btn6" type="button" value="6" class="standardButton" onclick="numberToText(btn6.value)"/>
+    <input id="btn7" type="button" value="7" class="standardButton" onclick="numberToText(btn7.value)"/>
+    <input id="btn8" type="button" value="8" class="standardButton" onclick="numberToText(btn8.value)"/>
+    <input id="btn_Sub" type="button" value="-" class="standardButton" onclick="operationSelection('-')"/>
+    <br>
+    <input id="btn9" type="button" value="9" class="standardButton" onclick="numberToText(btn9.value)"/>
+    <input id="btn_clear" type="button" value="C" class="standardButton" onclick="clearCalc()"/>
+    <input id="btn_equal" type="button" value="=" class="standardButton" onclick="result()"/>
+    <input id="btn_Div" type="button" value="/" class="standardButton" onclick="operationSelection('/')"/>
+</body>
+</html>

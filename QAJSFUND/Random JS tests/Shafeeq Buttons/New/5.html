@@ -1,0 +1,30 @@
+<html>
+ 
+ 
+ 
+<script>
+ 
+    let fsize=10
+    function doSomething(){
+ 
+        if(event.ctrlKey==true){
+            fsize++
+        }
+        if(event.altKey==true){
+            fsize--
+        }
+       
+        sp1.style.top=event.clientY+10
+        sp1.style.left=event.clientX
+        sp1.style.fontSize=fsize        
+    }
+</script>
+ 
+<body onmousemove="doSomething()"></body>
+<span id="sp1" style="position:absolute;">
+    Manchester
+</span>
+ 
+ 
+ 
+</html>
