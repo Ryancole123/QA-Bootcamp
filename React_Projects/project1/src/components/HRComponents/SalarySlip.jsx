@@ -1,4 +1,4 @@
-
+import ButtonComponent from "../ButtonComponent";
 
 function SalarySlip(props){
     // let employeeName = "Ryan";
@@ -32,7 +32,7 @@ function SalarySlip(props){
                     <td>{props.salary - (props.salary * 21/100)}</td>
                 </tr>
             </table>
-
+            <ButtonComponent/>
         </div>
     )
 }
