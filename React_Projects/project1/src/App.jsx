@@ -3,8 +3,15 @@ import Account from "./components/AccountsComponents/Account"
 import SalarySlip1 from "./components/HRComponents/SalarySlip1"
 import ButtonComponent from "./components/ButtonComponent"
 import Data from "./components/Data"
+import Employees from "./components/Employees"
+import Reducer1 from "./components/Reducer1"
+import NewReducer from "./components/NewReducer"
 
 function App() {
+
+
+
+
 
   return (
     // <div>
@@ -16,9 +23,13 @@ function App() {
     //   {/* <ButtonComponent/> */}
     // </div>
 
-
+    <>
     <Data/>
-
+    <hr/>
+    <Employees/>
+    <Reducer1/>
+    <NewReducer/>
+    </>
   )
 }
 

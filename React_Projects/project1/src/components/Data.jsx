@@ -8,7 +8,11 @@ let Data = () =>{
     return(
         <>
         <h2>List of Students</h2>
-        
+        {students.map((name) =>
+        <div>
+            {name}
+        </div>    
+    )}
         </>
     )
 }
