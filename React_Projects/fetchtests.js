@@ -8,3 +8,23 @@ object1.then((response) => {
             }})
 
 
+//----------------------------------------------------------------------------------------------------
+
+
+data = {
+    "firstName" : "DWP-Shafeeq",
+    "surname": "DWP-Khan",
+    "adddress": "Manchester, UK"
+}
+
+function processResponse(resp){
+    console.log("done");
+    
+}
+
+let postObject = fetch("http://localhost:3000/seller",{
+    method:"POST",
+    headers:{"Content-Type": "application/json"},
+    body:JSON.stringify(data)
+})
+postObject.then(processResponse)

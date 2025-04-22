@@ -5,6 +5,7 @@ import Employees from "./Employees"
 import Profile from "./Profile"
 import EmployeesList from "./EmployeesList"
 //import EmployeeProfile from "./EmployeeProfile"
+import FetchGet from "./FetchGet"
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
       <Link to="/about">About us</Link><br/>
       <Link to="/services">Sercives</Link><br/>
       <Link to="/list">Employee List</Link><br/>
+      <Link to="/sellers">Sellers</Link><br/>
         <Routes>
           <Route path="/about" element={<AboutUs/>}/>
           <Route path="/services" element={<Services/>}/>
@@ -22,6 +24,7 @@ function App() {
           <Route path="/profile/:num" element={<Profile/>}/>
           <Route path="/list" element={<EmployeesList/>}/>
           <Route path="/emp-profile/:eno" element={<Profile/>}/>
+          <Route path="/sellers" element={<FetchGet/>}/>
         </Routes>
       </BrowserRouter><br/><br/>
 
