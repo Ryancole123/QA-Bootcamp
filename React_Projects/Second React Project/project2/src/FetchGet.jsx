@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 let FetchGet = () =>{
 
@@ -22,15 +23,15 @@ let FetchGet = () =>{
 
     }
 
+    getData()
     return(
         <>
-        <h3>Getting Seller information</h3>
-        <input type="button" value="Get Data" onClick={() => getData()} />
+        <h3>List of Sellers</h3>
+
         {
         sellers.map((seller) => 
         <div>
-            {seller.firstName},
-            {seller.surname}
+            {seller.firstName} {seller.surname} - <Link to={`/properties/${seller.id}`}>Properties</Link>
         </div>)
         }
 
