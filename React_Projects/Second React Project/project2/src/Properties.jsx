@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 
 let Properties = () => {
 
@@ -8,8 +8,8 @@ let Properties = () => {
     let [properties, setProperties] = useState([])
 
 
-    let processData = (records) => {
-        setProperties(records)
+    let processData = (records) => {      
+        setProperties(records.filter((x) => x.sellerId == id))
         
     }
 
@@ -26,15 +26,14 @@ let Properties = () => {
     }
 
 
-
-
-    let prop =  properties.filter((x) => x.sellerId == id)
-    getData()
+    useEffect(getData)
     return(
         <>
         <h2>List of properties</h2>
 
-        Address: {prop[0].address}
+        Address: {
+            properties.map((property) => <div>{property.address}</div>)
+        }
 
         </>
 
